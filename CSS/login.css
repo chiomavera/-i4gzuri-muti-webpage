@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body {
+  font-family: "IBM Plex Monon", monospace;
+}
+
+body,
+button {
+  background-color: #1c2c84;
+}
+
+form.login-box {
+  width: auto;
+  padding: 50px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+form.login-box h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 2.5rem;
+}
+
+input::placeholder {
+  font-size: 0.9em;
+  color: #000;
+}
+
+form.login-box input {
+  font-size: 1em;
+  display: flex;
+}
+input[type="email"],
+input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  padding: 10px;
+  outline: 0;
+  border-bottom: 2px solid #1c2c84;
+}
+
+button {
+  color: #ffffff;
+  margin: 20px auto;
+  width: 125px;
+  padding: 10px 20px;
+  justify-content: center;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition-property: border;
+  transition: all 250ms;
+  text-align: center;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0484fb;
+  color: #eee;
+}
+
+.login-box p {
+  color: rgb(75, 74, 74);
+}
+
+form.login-box a {
+  text-decoration: none;
+}
+form.login-box a:hover {
+  color: #0484fb;
+}
+
+input[type="email"],
+input[type="password"],
+form.login-box a,
+form.login-box h1 {
+  color: #1c2c84;
+}
