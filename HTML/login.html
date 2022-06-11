@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
+</head>
+<body>
+     <!-- navigation -->
+     <header>
+        <nav class="nav-bar">
+            <span class="Navbar-toggle" id="js-Navbar-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+            <a href="#" class="logo">Chioma</a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="../HTML/index.html" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="../HTML/contact.html" class="nav-links">Contact Me</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">Login</a>
+                </li>
+                <li>
+                    <a href="../HTML/Register.html" class="nav-links">Register</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="wrapper">
+        <form class="login-box">
+            <h1>Login</h1>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <!-- <input type="password" id="pasword" name="password" placeholder="Password" required> -->
+            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                 placeholder="Password" required>
+            <button type="submit" class="submit">Sign In</button>
+            <p>
+                Don't have an account?
+                <br>
+                <a  href="../HTML/Register.html">Register here</a>
+            </p>
+            </form>
+        </main>
+
+        <footer id="footer">
+            <div class="icons-container">
+                <div class="icon-box"><a href="https://instagram.com/nkanmuo_vera/" target="_blank"><i
+                            class="fa-brands fa-instagram-square icon"></i></a></div>
+                <div class="icon-box"><a href="https://twitter.com/nkanmuo_vera/" target="_blank"><i
+                            class="fa-brands fa-twitter icon"></i></a></div>
+                <div class="icon-box"><a href="https://github.com/chiomavera/" target="_blank"><i
+                            class="fa-brands fa-github-square icon"></i></a></div>
+                <div class="icon-box"><a href="https://www.linkedin.com/in/chioma-vera-nkanmuo/" target="_blank"><i
+                        class="fa-brands fa-linkedin icon"></i></a></div>
+            </div>
+    
+            <div class="footer-text">
+                <p>A multi-page Website (#I4gZuri Internship Project)</p>
+                <p> &copy 2022 Chioma Vera</p>
+            </div>
+        </footer>
+
+    <script src="https://kit.fontawesome.com/47ff7ea1ff.js" crossorigin="anonymous"></script>
+    <script src="../script.js" defer></script>
+</body>
+</html>

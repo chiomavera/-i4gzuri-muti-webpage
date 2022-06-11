@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <!-- style sheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Register.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
+</head>
+
+<body>
+    <!-- navigation -->
+    <header>
+        <nav class="nav-bar">
+            <span class="Navbar-toggle" id="js-Navbar-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+            <a href="#" class="logo">Chioma</a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="../HTML/index.html" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="../HTML/contact.html" class="nav-links">Contact Me</a>
+                </li>
+                <li>
+                    <a href="../HTML/login.html" class="nav-links">Login</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">Register</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 id="title" class="text-center">Register</h1>
+            <p id="description" class="description text-center">Read Carefully and Fill out the following</p>
+            <p id="mandatory" class="description text-center">---All fields marked with * are mandatory---</p>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label for="fname">First Name<span class="clue">*</span></label>
+                <input type="text" id=" fname" name=" fname" class="form-control" placeholder="First Name" required
+                    autofocus />
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Last Name<span class="clue">*</span></label>
+                <input type="text" id="lname" name="lname" class="form-control" placeholder="Last Name" required
+                    autofocus />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Enter your gmail account<span class="clue">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email Address" required
+                    autofocus />
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number<span class="clue">*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="123-456-7890"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required autofocus />
+            </div>
+
+            <div class="form-group">
+                <p>What is your Gender</p>
+                <select id="dropdown" name="Gender" class="form-control">
+                    <option disabled selected value="select">Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" class="form-control" placeholder="Country" autofocus />
+            </div>
+
+            <div class="form-group">
+                <label for="State">State</label>
+                <input type="text" id="state" name="state" class="form-control" placeholder="State" autofocus />
+            </div>
+
+            <!-- <div class="form-group">
+                <label for="password">Password<span class="clue">*</span></label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Password"
+                    minlength="5" maxlength="11" required autofocus />
+            </div> -->
+
+            <label for="psw">Password <span class="clue">*</span></label>
+            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                class="form-control" placeholder="Password" required autofocus>
+
+                <div class="form-group">
+                    <label for="password">Confirm Password<span class="clue">*</span></label>
+                    <input type="password" id="Cpsw" name="Cpsw" class="form-control"
+                        placeholder="Confirm Password" required autofocus />
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Sign up
+                    </button>
+                </div>
+
+        </form>
+    </main>
+
+    <footer id="footer">
+        <div class="icons-container">
+            <div class="icon-box"><a href="https://instagram.com/nkanmuo_vera/" target="_blank"><i
+                        class="fa-brands fa-instagram-square icon"></i></a></div>
+            <div class="icon-box"><a href="https://twitter.com/nkanmuo_vera/" target="_blank"><i
+                        class="fa-brands fa-twitter icon"></i></a></div>
+            <div class="icon-box"><a href="https://github.com/chiomavera/" target="_blank"><i
+                        class="fa-brands fa-github-square icon"></i></a></div>
+            <div class="icon-box"><a href="https://www.linkedin.com/in/chioma-vera-nkanmuo/" target="_blank"><i
+                        class="fa-brands fa-linkedin icon"></i></a></div>
+        </div>
+
+        <div class="footer-text">
+            <p>A multi-page Website (#I4gZuri Internship Project)</p>
+            <p> &copy 2022 Chioma Vera</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/47ff7ea1ff.js" crossorigin="anonymous"></script>
+    <script src="../script.js" defer></script>
+</body>
+
+</html>
