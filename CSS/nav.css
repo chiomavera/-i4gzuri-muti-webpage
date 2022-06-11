@@ -10,7 +10,6 @@
 .nav-bar {
   font-size: 1.125rem;
   padding-bottom: 10px;
-  font-family: "Montserrat", sans-serif;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -107,6 +106,20 @@ a {
 .nav-bar,
 .icon-box {
   background-color: #1c2c84;
+}
+
+.nav-bar, #footer{
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 560px) {
+  #footer{
+    display: flex;
+  flex-direction: column;
+  }
+  .icon-box{
+    margin-bottom: 10px;
+  }
 }
 
 @media (min-width: 768px) {

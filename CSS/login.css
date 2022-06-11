@@ -11,16 +11,13 @@
   height: 100vh;
 }
 
-body {
-  font-family: "IBM Plex Monon", monospace;
-}
-
 body,
 button {
   background-color: #1c2c84;
 }
 
 form.login-box {
+  font-family: "IBM Plex Monon", monospace;
   width: auto;
   padding: 50px;
   text-align: center;
